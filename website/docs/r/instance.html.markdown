@@ -124,7 +124,7 @@ to understand the implications of using these attributes.
 The `root_block_device` mapping supports the following:
 
 * `volume_type` - (Optional) The type of volume. Can be `"standard"`, `"gp2"`, `"io1"`, `"sc1"`, or `"st1"`. (Default: `"standard"`).
-* `volume_size` - (Optional) The size of the volume in gibibytes (GiB).
+* `volume_size` - (Optional) The size of the volume in gigabytes (GiB).
 * `iops` - (Optional) The amount of provisioned
   [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html).
   This is only valid for `volume_type` of `"io1"`, and must be specified if
@@ -141,7 +141,7 @@ Each `ebs_block_device` supports the following:
 * `snapshot_id` - (Optional) The Snapshot ID to mount.
 * `volume_type` - (Optional) The type of volume. Can be `"standard"`, `"gp2"`,
   or `"io1"`. (Default: `"standard"`).
-* `volume_size` - (Optional) The size of the volume in gibibytes (GiB).
+* `volume_size` - (Optional) The size of the volume in gigabytes (GiB).
 * `iops` - (Optional) The amount of provisioned
   [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html).
   This must be set with a `volume_type` of `"io1"`.
